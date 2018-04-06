@@ -50,6 +50,7 @@ namespace Basic.Web
             services.AddScoped<Core.IWorkContext, WebCore.WebWorkContext>();
             services.AddScoped<Services.Customers.IAccountService, Services.Customers.AccountService>();
             services.AddScoped<Services.Authentication.IAuthenticationService, Services.Authentication.FormsAuthenticationService>();
+            //services.AddScoped(provider => WebCore.AutoMapperInit.Create(provider));
             //定时任务
             services.AddTimedJob();
             //session
